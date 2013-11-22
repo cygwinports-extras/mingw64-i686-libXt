@@ -12,6 +12,8 @@ contains msvcrt-linked binaries (aka 'mingw').  It is for use with the
 mingw64-i686-gcc cross compiler, and installs into the
 /usr/i686-w64-mingw32/sys-root/mingw/{lib,include} directories."
 
+PATCH_URI="1.1.4-mingw64.patch"
+
 CYGCONF_ARGS="--disable-docs --disable-specs"
 MAKEOPTS+=" libman_DATA= "
 
