@@ -3,7 +3,7 @@ ORIG_PN="libXt"
 inherit cross xorg
 
 NAME="mingw64-i686-libXt"
-VERSION=1.1.3
+VERSION=1.1.4
 RELEASE=1
 CATEGORY="Devel"
 SUMMARY="X.Org X Intrinsics library for Win32 toolchain"

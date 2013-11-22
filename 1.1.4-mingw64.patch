@@ -1,0 +1,21 @@
+Intrinsic.c:917:5: error: implicit declaration of function '_getdrives'
+
+--- origsrc/libXt-1.1.4/src/Intrinsic.c	2013-05-30 20:17:00.000000000 -0500
++++ src/libXt-1.1.4/src/Intrinsic.c	2013-11-21 17:07:25.471313000 -0600
+@@ -884,7 +884,7 @@ static int AccessFile (
+ #if defined(WIN32) && defined(__MINGW32__)
+     /* don't try others */
+     return 0;
+-#endif
++#else
+ 
+     /* try the places set in the environment */
+     drive = getenv ("_XBASEDRIVE");
+@@ -932,6 +932,7 @@ static int AccessFile (
+ 	}
+     }
+     return 0;
++#endif
+ }
+ #endif
+ 
